@@ -1,11 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -14,6 +18,20 @@ a {
 
 li {
   list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 .clearfix::after {
@@ -28,14 +46,31 @@ li {
   margin: 0 auto;
 }
 
+.container-small {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /***Buttons***/
 .btn-inizia {
   margin-left: 30px;
   padding: 4px 15px;
 }
 
-.btn-large{
-  padding: 4px 15px;
+.btn-large {
+  padding: 5px 15px;
+}
+
+.btn-white {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.btn-white:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .btn {
@@ -43,19 +78,40 @@ li {
   background-color: #0061ff;
 }
 
+.btn:hover {
+  background-color: #0062ffb9;
+}
+
 .big-arrow {
   font-size: 30px;
   color: #000;
 }
 
-/***HEADER***/
+.check,
+.buy-now {
+  color: #0061ff;
+}
+
+.buy-now {
+  text-decoration: underline;
+}
+
+.buy-now:hover {
+  text-decoration: none;
+}
+
+/**************
+    HEADER
+**************/
 
 header {
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px 15px 10px 15px;
+  box-shadow: 2px 2px 5px #ddd;
   position: fixed;
+  z-index: 100;
 }
 
 .first-half_nav,
@@ -94,12 +150,17 @@ nav li a {
   color: #000;
 }
 
+nav li a:hover {
+  border-bottom: 1.5px solid #000;
+}
+
 /***JUMBO***/
 
 #jumbo {
   background-color: #b4d0e7;
   padding-top: 140px;
   max-height: 700px;
+  margin-bottom: 150px;
 }
 
 .jumbo-title {
@@ -113,11 +174,11 @@ nav li a {
 }
 
 .jumbo-content_text p:first-of-type {
-  margin: 30px 0;
+  margin: 40px 0px 30px 0;
 }
 
 .jumbo-content_text p:nth-child(3) {
-  margin: 20px 0 30px 0;
+  margin: 20px 0px 30px 0px;
   font-size: 14px;
 }
 
@@ -127,9 +188,166 @@ nav li a {
 }
 
 .jumbo-content_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   position: relative;
-  bottom: -30px;
+  bottom: -40px;
+}
+
+/**************
+    MAIN
+**************/
+
+/***PIANI***/
+#piani {
+  margin-bottom: 100px;
+}
+#piani h2 {
+  margin-bottom: 35px;
+}
+
+form label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.plans {
+  margin: 40px 0;
+}
+
+.plan-margin {
+  margin: 0 5%;
+}
+
+.plan {
+  width: 30%;
+  float: left;
+  height: 900px;
+  border: 1.2px solid rgb(187, 185, 185);
+  font-size: 14px;
+}
+
+.plan span,
+.plan-horizontal span {
+  display: block;
+}
+
+.plan span:first-child,
+.plan-horizontal span:first-child {
+  text-align: center;
+  padding: 8px 0px;
+  border-bottom: 1.2px solid rgb(187, 185, 185);
+}
+
+.plan-details,
+.plan-col4 {
+  padding: 25px;
+}
+
+.plan-details h3,
+.plan-col4 h3 {
+  margin-bottom: 15px;
+}
+
+.plan-details h4 {
+  font-size: 15px;
+  margin: 30px 0px 20px 0px;
+}
+
+.plan-details .price-time {
+  margin: 15px 0px 25px 0px;
+  color: #828385;
+  font-size: 12px;
+}
+
+.plan-details ul li {
+  margin-bottom: 30px;
+}
+
+.plan-details li i {
+  font-size: 13px;
+}
+
+.plan-details a:first-of-type {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+span.border-small {
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1.2px solid rgb(187, 185, 185);
+}
+
+.plan-horizontal {
+  border: 1.2px solid rgb(187, 185, 185);
+  font-size: 14px;
+}
+
+.plan-details_col4 {
+  width: 75%;
+  float: left;
+}
+
+.plan-details_col4 span:first-of-type {
+  margin-bottom: 25px;
+}
+
+.plan-btn_col4 {
+  width: 25%;
+  float: right;
+}
+
+.plan-btn_col4 {
+  text-align: right;
+}
+
+.plan-btn_col4 a {
+  display: block;
+  text-align: center;
+}
+
+/***PARTNER***/
+#partner {
+  margin-bottom: 80px;
+}
+
+.partner-img {
+  width: 55%;
+  float: left;
+}
+
+.partner-text {
+  width: 45%;
+  float: right;
+  padding-left: 55px;
+}
+
+.partner-text h3 {
+  margin: 35px 0;
+}
+.partner-text p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+/***BUSINESS***/
+#business {
+  margin-bottom: 150px;
+}
+
+.business-row:first-of-type {
+  margin: 40px 0 80px 0;
+}
+
+.business-content {
+  width: 30%;
+  float: left;
+}
+
+.business-margin {
+  margin: 0 5%;
+}
+
+.business-content_text p {
+  margin-top: 25px;
 }
