@@ -55,6 +55,7 @@ h3 {
 /***Buttons***/
 .btn-inizia {
   margin-left: 30px;
+  margin-right: 20px;
   padding: 4px 15px;
 }
 
@@ -88,15 +89,15 @@ h3 {
 }
 
 .check,
-.buy-now {
+.btn-simple {
   color: #0061ff;
 }
 
-.buy-now {
+.btn-simple {
   text-decoration: underline;
 }
 
-.buy-now:hover {
+.btn-simple:hover {
   text-decoration: none;
 }
 
@@ -106,12 +107,17 @@ h3 {
 
 header {
   width: 100%;
+  height: 70px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px 15px 10px 15px;
+  line-height: 70px;
   box-shadow: 2px 2px 5px #ddd;
   position: fixed;
   z-index: 100;
+}
+
+.logo img {
+  object-fit: none;
 }
 
 .first-half_nav,
@@ -137,8 +143,7 @@ header {
 .logo {
   float: left;
   width: 10%;
-  position: relative;
-  top: -5px;
+  height: 100%;
 }
 
 nav li {
@@ -150,11 +155,13 @@ nav li a {
   color: #000;
 }
 
-nav li a:hover {
-  border-bottom: 1.5px solid #000;
+nav li:hover {
+  border-bottom: 2px solid #0061ff;
 }
 
-/***JUMBO***/
+/**************
+    JUMBO
+**************/
 
 #jumbo {
   background-color: #b4d0e7;
@@ -350,4 +357,94 @@ span.border-small {
 
 .business-content_text p {
   margin-top: 25px;
+}
+
+/***SPONSOR***/
+.sponsor-heading {
+  margin-bottom: 40px;
+}
+
+.sponsor-heading h2 {
+  margin-bottom: 30px;
+}
+
+.sponsor-content {
+  background-color: #f5f5f5;
+}
+
+.sponsor-block {
+  float: left;
+}
+
+.first-block,
+.third-block {
+  width: 30%;
+}
+
+.sponsor-block_img {
+  width: 50%;
+  float: left;
+  padding: 25% 0;
+  position: relative;
+}
+
+.sponsor-block_img img {
+  width: 50%;
+  max-width: 100px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.designit {
+  background-color: #a2d39b;
+  border: 10px solid rgba(253, 253, 253, 0.5);
+  padding: calc(25% - 10px);
+}
+
+.arizona {
+  background-color: #61082b;
+}
+
+.florida {
+  background-color: #0093ce;
+}
+
+.topps {
+  background-color: #ff1c1c;
+}
+
+.bicycle-relief {
+  background-color: #d5001f;
+}
+
+.hearts-corps {
+  background-color: #b4d0e7;
+}
+
+.lonely {
+  background-color: #0d2481;
+}
+
+.clear-channel {
+  background-color: #ffd830;
+}
+
+.second-block {
+  width: 40%;
+  height: 100%;
+  padding: 50px;
+}
+
+.second-block img {
+  filter:invert(1);
+  width: 120px;
+}
+
+
+.second-block p {
+  max-width: 700px;
+  margin-top: 15%;
 }
