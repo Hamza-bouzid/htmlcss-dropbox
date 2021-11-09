@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Style-->
@@ -32,7 +32,15 @@
       <div class="second-half_nav">
         <nav>
           <ul>
-            <li><a href="#">Supporto</a></li>
+            <li id="support">
+              <a href="#">Supporto</a>
+              <!--Dropdown menu-->
+              <ul class="dropdown-menu">
+                <li><a href="#">Centro assistenza</a></li>
+                <li><a href="#">Forum della community</a></li>
+              </ul>
+              <!--/ Dropdown menu-->
+            </li>
             <li><a href="#">Contatta l'ufficio vendite</a></li>
             <li><a href="#">Accedi</a></li>
           </ul>
@@ -113,7 +121,7 @@
 
                 <ul>
                   <li><i class="fas fa-user-plus"></i> 1 utente</li>
-                  <li><i class="far fa-folder"></i> 3 TB di spazio di archiviazione sicuro</li>
+                   <li><i class="far fa-folder"></i> 3 TB di spazio di archiviazione sicuro</li>
                   <li><i class="far fa-smile"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
                 </ul>
 
@@ -257,7 +265,7 @@
           </div>
         </section>
       </div>
-      
+
       <!--SPONSOR-->
       <section id="sponsor">
         <div class="container-small sponsor-heading">
@@ -308,7 +316,7 @@
       <section id="banner-cta">
         <div class="container-small banner-cta clearfix">
           <div class="banner-cta_heading">
-            <h2>Porta dropbox Business<br>nella tua azienda</h2>
+            <h2>Porta dropbox Business<br />nella tua azienda</h2>
           </div>
           <div class="banner-cta_btn">
             <a class="btn-white btn-large" href="#">Inizia la tua prova gratuita</a>
